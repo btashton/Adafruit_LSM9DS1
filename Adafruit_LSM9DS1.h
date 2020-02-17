@@ -19,10 +19,11 @@
 #include <Adafruit_LIS3MDL.h>
 #include <Adafruit_Sensor.h>
 #include <SPI.h>
-#include <Wire.h>
+//#include <Wire.h>
+#include <i2c_driver_wire.h>
 
-#define LSM9DS1_ADDRESS_ACCELGYRO (0x6B)
-#define LSM9DS1_ADDRESS_MAG (0x1E)
+#define LSM9DS1_ADDRESS_ACCELGYRO (0x6A)
+#define LSM9DS1_ADDRESS_MAG (0x1C)
 #define LSM9DS1_XG_ID (0b01101000)
 
 // Linear Acceleration: mg per LSB
